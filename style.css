@@ -65,7 +65,19 @@ html.body{
     margin-left: 160px;
 }
 
+.bonding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bonding .bondingelem {
+    transform: translateY(100%);
+}
+
 .blocktext{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     width: fit-content;
 }
 .blocktext h5 {
@@ -74,6 +86,9 @@ html.body{
 }
 
 #smallheadings{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
     margin-top: 100px;
     padding-right: 30px;
 }
@@ -156,18 +171,28 @@ html.body{
 
 #about {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    color: #fff;
-    padding: 10vw 10vw;
-    padding-left: 40vw;
     width: 100%;
     background-color: black;
 }
 
-#textabout {
-    width: 25rem;
+
+.aboutcolum{
+    width: 50%;
+    padding-top: 123px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 170px;
+    line-height: 1.4;
+}
+
+.imgcolum{
+    width: 50%;
+    align-items: end;
+    float: right;
+    text-align: end;
+    padding-right: 2vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #textabout h5 {
